@@ -1,6 +1,6 @@
 const express = require('express');
 const rutas = express.Router();
-const paginas=require('../controladores/controladorPaginas.js')
+const paginas=require('../../controladores/controladorPaginas.js')
 
 
 rutas.get('/', (req, res) => {

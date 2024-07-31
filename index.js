@@ -3,10 +3,10 @@ const mongoose = require('mongoose')
 const path = require('path');
 const app = express()
 const port = process.env.PORT || 3000;
-const rutasPaginas = require('./rutas/rutasPaginas');
-const connectDB = require('./conexiones/conexionBD');
-const BaseDatos = require('./rutas/rutasBD');
-const rutasArchivos=require('./rutas/rutasArchivos');
+const rutasPaginas = require('./api/rutas/rutasPaginas');
+const connectDB = require('./api/conexiones/conexionBD');
+const BaseDatos = require('./api/rutas/rutasBD');
+const rutasArchivos=require('./api/rutas/rutasArchivos');
 
 
 //************************************************************ */

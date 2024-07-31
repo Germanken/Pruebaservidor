@@ -1,7 +1,7 @@
 const express = require('express');
 const rutas = express.Router();
-const BaseDatos=require('../controladores/controladorBD.js')
-const validacion=require('../intermediarias/validaciones');
+const BaseDatos=require('../../controladores/controladorBD.js')
+const validacion=require('../intermediarias/validaciones.js');
 
 rutas.get('/usuarios', BaseDatos.obtenerUsuarios);
 rutas.post('/usuarios', validacion,BaseDatos.crearUsuario);
