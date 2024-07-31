@@ -3,15 +3,15 @@ const mongoose = require('mongoose');
 const path = require('path');
 const app = express();
 const port = process.env.PORT || 3000;
-const rutasPaginas = require('./rutas/rutasPaginas');
-const connectDB = require('./conexiones/conexionBD');
-const BaseDatos = require('./rutas/rutasBD');
-const rutasArchivos=require('./rutas/rutasArchivos');
+const rutasPaginas = require('../rutas/rutasPaginas');
+const connectDB = require('../conexiones/conexionBD');
+const BaseDatos = require('..rutasBD/rutas/rutasBD');
+const rutasArchivos=require('../rutas/rutasArchivos');
 
 
 //************************************************************ */
 //        middleware 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + './public'));
 app.set('view engine', 'html');
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
